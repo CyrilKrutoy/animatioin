@@ -1,9 +1,20 @@
 body{background: black;}
 
+.topgear{
+display: block;
+width: 30px;
+height: 30px;
+background: grey;
+border: 1px solid gray;
+border-radius: 2px;
+cursor: pointer;
+position: relative;
+margin-left: 20px;
+margin-top: 20px;
+    }
 .gear1{
   display: inline-block;
   position: relative;
-  height: 100px;
   top: 50px;
   left: 50px;
 }
@@ -64,7 +75,6 @@ body{background: black;}
 .gear2{
   display: inline-block;
   position: relative;
-  height: 100px;
   top: 63px;
   left: 54px;
 }
@@ -118,5 +128,68 @@ body{background: black;}
 @keyframes spin2 {
   from {transform: rotate(0deg); }
   to {transform: rotate(-360deg);}
+}
+
+.gear-checkbox{
+  display: none;
+  }
+.check{
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  top: 37px;
+  left: 35px;
+  transition: opacity 2s ease;
+  }
+
+  .check1{
+  display: inline-block;
+  position: absolute;
+  height: 2px;
+  width: 7px;
+  background: red;
+  transform: rotate(45deg);
+}
+.check2{
+  position: relative;
+  display: inline-block;
+  height: 2px;
+  width: 14px;
+  background: red;
+  transform: rotate(315deg);
+  left: 4px;
+  top: -15px;
+}
+.gear-checkbox:checked ~ .check{
+  opacity: 1;
+  visibility: visible;
+}
+.enable{
+  position: relative;
+  display: none;
+  font-size: 16px;
+  color: #fff;
+  top:120px;
+  left: -70px;
+}
+.disable{
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+  top:120px;
+  left: -70px;
+}
+.gear-checkbox:checked ~ .enable{
+  display: inline-block;
+}
+.gear-checkbox:checked ~ .disable{
+  display: none;
+}
+.gear-checkbox:checked ~ .gear11{
+  animation-name: spin1;
+}
+.gear-checkbox:checked ~ .gear21{
+  animation-name: spin2;
 }
 
