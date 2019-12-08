@@ -1,0 +1,122 @@
+body{background: black;}
+
+.gear1{
+  display: inline-block;
+  position: relative;
+  height: 100px;
+  top: 50px;
+  left: 50px;
+}
+
+.gear11{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  background: #fff;
+  border-radius: 50%;
+  animation-name: spin1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.gear11 .center1{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  width: 30px;
+  height: 30px;
+  background: black;
+  border-radius: 50%;
+}
+
+ .tooth1{
+  position: absolute;
+  top: -6px;
+  left: 19px;
+  z-index: 1;
+  width: 11px;
+  height: 62px;
+  background:#fff;
+}
+
+.tooth1:nth-child(2){
+  transform: rotate(45deg);
+}
+
+.tooth1:nth-child(3){
+  transform: rotate(90deg);
+}
+
+.tooth1:nth-child(4){
+  transform: rotate(135deg);
+}
+
+@keyframes spin1 {
+  from {transform: rotate(0deg); }
+  to {transform: rotate(360deg);}
+}
+
+body{background: black;}
+
+.gear2{
+  display: inline-block;
+  position: relative;
+  height: 100px;
+  top: 63px;
+  left: 54px;
+}
+
+.gear21{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  background: #fff;
+  border-radius: 50%;
+  animation-name: spin2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.gear21 .center2{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  width: 30px;
+  height: 30px;
+  background: black;
+  border-radius: 50%;
+}
+
+ .tooth2{
+  position: absolute;
+  top: -6px;
+  left: 19px;
+  z-index: 1;
+  width: 11px;
+  height: 62px;
+  background:#fff;
+}
+
+.tooth2:nth-child(2){
+  transform: rotate(45deg);
+}
+
+.tooth2:nth-child(3){
+  transform: rotate(90deg);
+}
+
+.tooth2:nth-child(4){
+  transform: rotate(135deg);
+}
+
+@keyframes spin2 {
+  from {transform: rotate(0deg); }
+  to {transform: rotate(-360deg);}
+}
+
